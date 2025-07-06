@@ -1,0 +1,30 @@
+###############
+## 
+####
+
+GPU: [1]
+
+VERBOSE: True
+
+MODEL:
+  MODE: 'Deblurring'
+  SESSION: 'Refine_3d_ViTout_Fus4_5'
+
+# Optimization arguments.
+OPTIM:
+  BATCH_SIZE: 2
+  NUM_EPOCHS: 300
+  # NEPOCH_DECAY: [10]
+  LR_INITIAL: 5e-6
+  LR_MIN: 1e-8
+  # BETA1: 0.9
+
+TRAINING:
+  VAL_AFTER_EVERY: 1
+  RESUME: False
+  TRAIN_PS: 256
+  VAL_PS: 256
+#  TRAIN_DIR: '/media/6T/GOPRO_Large_all' # path to training data
+#  VAL_DIR: '/media/6T/GOPRO_Large_all'    # path to validation data
+  SAVE_DIR: './results/checkpoint'     # path to save models and images
+  # SAVE_IMAGES: False
