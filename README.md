@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 ## Data Processing
 
-You can leverage processing_event on the original event data to obtain a fixed frame event input.
+You can leverage processing_event.py on the original event data to obtain a fixed frame event input.
 
 ## Test
 
