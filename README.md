@@ -25,24 +25,24 @@ You can leverage processing_event.py on the original event data to obtain a fixe
 ## Test
 
 ```shell
-python ./AA_1_Final_submit/finetune_2stage/output3_test_guass.py
+python output3_test_guass.py
 ```
 
-- running ./AA_1_Final_submit/finetune_2stage/output3_test_guass.py to obtain the final output ./AA_1_Final_submit/finetune_2stage/results/bin
+- running output3_test_guass.py to obtain the final output ./AA_1_Final_submit/finetune_2stage/results/bin
 
 ```shell
-python ./AA_1_Final_submit/finetune_2stage/output3_test_image_time.py
+python output3_test_image_time.py
 ```
 
-- running ./AA_1_Final_submit/finetune_2stage/output3_test_image_time.py to obtain an inference time of our methods.
+- running output3_test_image_time.py to obtain an inference time of our methods.
 
 ## Visualization
 
 ```shell
-python ./AA_1_Final_submit/finetune_2stage/bin2rgb.py
+python bin2rgb.py
 ```
 
-- running ./AA_1_Final_submit/finetune_2stage/bin2rgb.py to obtain visualization of our output
+- running bin2rgb.py to obtain visualization of our output
 
 
 ## Acknowledgement
