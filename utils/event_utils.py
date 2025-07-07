@@ -13,14 +13,7 @@ import cv2
 # from timers import Timer, CudaTimer
 
 def check_event_nums(h5_file_lists, args):
-    """
-    当按照固定事件数据将event转换为tensor的时候，需要保证event的个数，大于：
-    int(num_events_per_pixel * DVS_stream_width * DVS_stream_height) + 1
-    否则，判定该event序列无效。
-    当按照 从零累积灰度事件 并 固定事件数据将event转换为tensor的时候，需要保证event的个数，大于：
-    int(num_events_per_pixel * DVS_stream_width * DVS_stream_height) + 1 + pre_acc_num(提前累积的事件个数)
-    否则，判定该event序列无效。
-    """
+
     if args.train_divide_events_by_frames:
         return h5_file_lists
     valid_files = []
@@ -321,17 +314,6 @@ class CudaTimer:
         cuda_timers[self.timer_name].append(self.start.elapsed_time(self.end))
 
 class EventPreprocessor:
-    """
-    # ma:　receive the torch tensor as input. 归一化采用的减均值除方差。接受的 event 尺寸为： [batch, C, H, W]
-    Utility class to preprocess event tensors.
-    Can perform operations such as hot pixel removing, event tensor normalization,
-    or flipping the event tensor.
-
-    -- 202104201006
-    这个函数好像不太对啊，这个函数的操作是对一个 batchsize 中所有的样本混合在一起，对非零值做 减均值-除方差 归一化。
-    但是，按道理来讲，这种归一化，应该是对每个单独的样本做吧，而不是将所有样本混合在一起。
-    因此，修改这个归一化的代码。
-    """
 
     def __init__(self, options):
         logging.info('== Event preprocessing ==')
