@@ -18,8 +18,6 @@ pip install -r requirements.txt
 
 ```
 
-If you encounter an error while installing Flash Attention, please [**manually download**](https://github.com/Dao-AILab/flash-attention/releases) the installation package based on your Python version, CUDA version, and Torch version, and install it using `pip install flash_attn-2.7.3+cu12torch2.2cxx11abiFALSE-cp312-cp312-linux_x86_64.whl`.
-
 ## Data Processing
 
 You can leverage processing_event on the original event data to obtain a fixed frame event input.
