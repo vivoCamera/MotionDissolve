@@ -3,7 +3,7 @@
 - ✅ Release the final test result
 - ✅ Release the processing code
 - ✅ Release the second finetune process
-- [  ] Update the final model weights (The model weights are pending internal review and will be uploaded shortly.)
+- ✅ Update the final model weights [0108](https://pan.baidu.com/s/1ybnUMnPeY7zqYpnMLVYAdw)
 - [  ] Release the source code
 - [  ] Release the first-stage training process
 
