@@ -27,13 +27,13 @@ You can leverage processing_event on the original event data to obtain a fixed f
 ## Test
 
 ```shell
-python ./AA_1_Final_submit/finetune_2stage/output3_test_guass.py
+python output3_test_guass.py
 ```
 
-- running ./AA_1_Final_submit/finetune_2stage/output3_test_guass.py to obtain the final output ./AA_1_Final_submit/finetune_2stage/results/bin
+- running output3_test_guass.py to obtain the final output ./AA_1_Final_submit/finetune_2stage/results/bin
 
 ```shell
-python ./AA_1_Final_submit/finetune_2stage/output3_test_image_time.py
+python output3_test_image_time.py
 ```
 - running ./AA_1_Final_submit/finetune_2stage/output3_test_image_time.py to obtain an inference time of our methods.
 
