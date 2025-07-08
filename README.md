@@ -28,7 +28,7 @@ You can leverage processing_event.py on the original event data to obtain a fixe
 python output3_test_guass.py
 ```
 
-- running output3_test_guass.py to obtain the final output ./results/bin
+- running output3_test_guass.py to obtain the final output ./results/bin. You can also download our final results straightly from ./results/bin.
 
 ```shell
 python output3_test_image_time.py
